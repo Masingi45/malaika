@@ -1,0 +1,91 @@
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+.navigation-bar {
+    background-color: #007bff;
+    padding: 15px;
+    text-align: center;
+}
+
+.navigation-bar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+.navigation-bar a:hover {
+    background-color: #0056b3;
+    border-radius: 4px;
+}
+
+/* Register Form Styles */
+.register-form, .self-diagnosis-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.patient-register, .self-diagnosis {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+h4, h5 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Self-Diagnosis Styles */
+.diseases label, .intoxicats label {
+    display: block;
+    margin: 5px 0;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+.radio-group label {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.radio-group input {
+    margin-right: 5px;
+}

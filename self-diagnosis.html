@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Self diagnosis</title>
+    <script>
+       
+        function submitInformation(event) {
+           
+            window.location.href = "doctor-login.html";
+        }
+    </script>
+</head>
+<body>
+  
+   <h4 class="previous-disorder">Are you suffering from any condition besides the one you are consulting for now?</h4>
+   <select name="disease" id="disease" required>
+    <option value="">----Select----</option>
+    <option value="yes">Yes</option>
+    <option value="no">No</option>
+   </select>
+
+   <div class="diseases">
+      <label for="asthma"><input type="checkbox" id="asthma"> Asthma</label>
+      <label for="cancer"><input type="checkbox" id="cancer"> Cancer</label>
+      <label for="diabetes"><input type="checkbox" id="diabetes"> Diabetes</label>
+      <label for="cardio"><input type="checkbox" id="cardio"> Cardio Disease</label>
+      <label for="hyper"><input type="checkbox" id="hyper"> Hyper Tension</label>
+      <label for="psychatric"><input type="checkbox" id="psychatric"> Psychatric Disorder</label>
+      <label for="epilepsy"><input type="checkbox" id="epilepsy"> Epilepsy</label>
+      <label for="others"><input type="checkbox" id="others"> Others</label>
+   </div>
+
+   <div class="symptoms">
+      <h4>What are the current symptoms?</h4>
+      <textarea id="symptoms" placeholder="List all your symptoms here" required></textarea>
+   </div>
+
+   <div class="intoxicants">
+      <h4>Are you taking any drugs or alcoholic beverages?</h4>
+      <label for="drugs-yes"><input type="radio" name="drugs" id="drugs-yes" value="yes"> Yes</label>
+      <label for="drugs-no"><input type="radio" name="drugs" id="drugs-no" value="no"> No</label>
+      <textarea id="drugs" placeholder="If yes, please list all the drugs you are consuming"></textarea>
+
+      <h3>Alcohol</h3>
+      <label for="alcohol-yes"><input type="radio" name="alcohol" id="alcohol-yes" value="yes"> Yes</label>
+      <label for="alcohol-no"><input type="radio" name="alcohol" id="alcohol-no" value="no"> No</label>
+
+      <h4>Are you taking any medication?</h4>
+      <label for="medication-yes"><input type="radio" name="medication" id="medication-yes" value="yes"> Yes</label>
+      <label for="medication-no"><input type="radio" name="medication" id="medication-no" value="no"> No</label>
+      <textarea id="med" placeholder="If yes, please list all the medications and the diseases they are for"></textarea>
+
+      <h4>Do you have any allergies?</h4>
+      <label for="allergy-yes"><input type="radio" name="allergy" id="allergy-yes" value="yes"> Yes</label>
+      <label for="allergy-no"><input type="radio" name="allergy" id="allergy-no" value="no"> No</label>
+      <label for="allergy-unsure"><input type="radio" name="allergy" id="allergy-unsure" value="unsure"> Not sure</label>
+      <textarea id="allergies" placeholder="If yes, please list them all here"></textarea>
+   </div>
+
+ 
+  
+
+  
+   <label for="docName">Doctor's name: <input type="text" id="docName" required></label>
+   <label for="docEmail">Doctor's Email: <input type="email" id="docEmail" required></label>
+
+   <button type="submit" onclick="submitInformation(event)">Submit Information</button>
+</body>
+</html>
