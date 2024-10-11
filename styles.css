@@ -1,4 +1,4 @@
-/* Global styles */
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f7f7f7;
@@ -6,7 +6,7 @@ body {
     padding: 0;
 }
 
-/* Navigation Bar */
+
 .navigation-bar {
     background-color: #007bff;
     padding: 15px;
@@ -26,7 +26,7 @@ body {
     border-radius: 4px;
 }
 
-/* Register Form Styles */
+
 .register-form, .self-diagnosis-form {
     display: flex;
     justify-content: center;
@@ -49,7 +49,7 @@ h4, h5 {
 }
 
 input, select, textarea {
-    width: 100%;
+    width: 50%;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
@@ -57,7 +57,7 @@ input, select, textarea {
 }
 
 button {
-    width: 100%;
+    width: 50%;
     padding: 10px;
     background-color: #28a745;
     color: white;
@@ -71,7 +71,7 @@ button:hover {
     background-color: #218838;
 }
 
-/* Self-Diagnosis Styles */
+
 .diseases label, .intoxicats label {
     display: block;
     margin: 5px 0;
